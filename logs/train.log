@@ -1,0 +1,566 @@
+2024-05-26 16:04:40 - INFO - task2_train_fasterrcnn.py - 30 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-26 16:04:40 - INFO - task2_train_fasterrcnn.py - 46 - Number of training samples: 5011
+2024-05-26 16:04:40 - INFO - task2_train_fasterrcnn.py - 47 - Number of validation samples: 4952
+
+2024-05-26 16:04:46 - INFO - task2_train_fasterrcnn.py - 65 - 
+EPOCH 1 of 30
+2024-05-26 16:25:29 - INFO - task2_train_fasterrcnn.py - 128 - 
+EPOCH loss: 0.535859936185811
+2024-05-26 16:25:29 - INFO - task2_train_fasterrcnn.py - 130 - save_model!!
+2024-05-26 16:25:35 - INFO - task2_train_fasterrcnn.py - 65 - 
+EPOCH 2 of 30
+2024-05-26 16:46:10 - INFO - task2_train_fasterrcnn.py - 128 - 
+EPOCH loss: 0.4816281531938906
+2024-05-26 16:46:11 - INFO - task2_train_fasterrcnn.py - 130 - save_model!!
+2024-05-26 16:46:17 - INFO - task2_train_fasterrcnn.py - 65 - 
+EPOCH 3 of 30
+2024-05-26 17:06:42 - INFO - task2_train_fasterrcnn.py - 128 - 
+EPOCH loss: 0.4545660741243002
+2024-05-26 17:06:42 - INFO - task2_train_fasterrcnn.py - 130 - save_model!!
+2024-05-26 17:06:48 - INFO - task2_train_fasterrcnn.py - 65 - 
+EPOCH 4 of 30
+2024-05-26 17:27:19 - INFO - task2_train_fasterrcnn.py - 128 - 
+EPOCH loss: 0.4358393239864465
+2024-05-26 17:27:19 - INFO - task2_train_fasterrcnn.py - 130 - save_model!!
+2024-05-26 17:27:25 - INFO - task2_train_fasterrcnn.py - 65 - 
+EPOCH 5 of 30
+2024-05-26 17:47:51 - INFO - task2_train_fasterrcnn.py - 128 - 
+EPOCH loss: 0.42378053273500627
+2024-05-26 17:47:51 - INFO - task2_train_fasterrcnn.py - 130 - save_model!!
+2024-05-26 17:47:56 - INFO - task2_train_fasterrcnn.py - 65 - 
+EPOCH 6 of 30
+2024-05-26 18:08:25 - INFO - task2_train_fasterrcnn.py - 128 - 
+EPOCH loss: 0.41343839041559954
+2024-05-26 18:08:25 - INFO - task2_train_fasterrcnn.py - 130 - save_model!!
+2024-05-26 18:08:30 - INFO - task2_train_fasterrcnn.py - 65 - 
+EPOCH 7 of 30
+2024-05-26 18:28:53 - INFO - task2_train_fasterrcnn.py - 128 - 
+EPOCH loss: 0.40425732696849465
+2024-05-26 18:28:53 - INFO - task2_train_fasterrcnn.py - 130 - save_model!!
+2024-05-26 18:28:58 - INFO - task2_train_fasterrcnn.py - 65 - 
+EPOCH 8 of 30
+2024-05-26 18:49:28 - INFO - task2_train_fasterrcnn.py - 128 - 
+EPOCH loss: 0.3966346785761832
+2024-05-26 18:49:28 - INFO - task2_train_fasterrcnn.py - 130 - save_model!!
+2024-05-26 18:49:33 - INFO - task2_train_fasterrcnn.py - 65 - 
+EPOCH 9 of 30
+2024-05-26 19:09:59 - INFO - task2_train_fasterrcnn.py - 128 - 
+EPOCH loss: 0.39009758218232987
+2024-05-26 19:09:59 - INFO - task2_train_fasterrcnn.py - 130 - save_model!!
+2024-05-26 19:10:03 - INFO - task2_train_fasterrcnn.py - 65 - 
+EPOCH 10 of 30
+2024-05-26 19:30:27 - INFO - task2_train_fasterrcnn.py - 128 - 
+EPOCH loss: 0.3842035332923396
+2024-05-26 19:30:27 - INFO - task2_train_fasterrcnn.py - 130 - save_model!!
+2024-05-26 19:30:33 - INFO - task2_train_fasterrcnn.py - 65 - 
+EPOCH 11 of 30
+2024-05-27 02:14:54 - INFO - task2_inference_fasterrcnn.py - 31 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 03:05:47 - INFO - task2_inference_fasterrcnn.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 03:14:57 - INFO - task2_inference_fasterrcnn.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 03:16:23 - INFO - task2_inference_fasterrcnn.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 03:44:42 - INFO - task2_inference_fasterrcnn.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 03:47:17 - INFO - task2_inference_fasterrcnn.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 03:48:40 - INFO - task2_inference_fasterrcnn.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 07:02:42 - INFO - task2_inference_fasterrcnn.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 07:14:16 - INFO - task2_inference_fasterrcnn.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 07:15:29 - INFO - task2_inference_fasterrcnn.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 07:18:28 - INFO - task2_inference_fasterrcnn.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 07:23:29 - INFO - task2_inference_fasterrcnn.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 07:34:36 - INFO - task2_inference_fasterrcnn.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 08:00:47 - INFO - task2_inference_fasterrcnn.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 08:03:02 - INFO - task2_inference_fasterrcnn.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 08:04:47 - INFO - task2_inference_fasterrcnn.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 08:46:53 - INFO - train.py - 28 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 08:46:53 - INFO - train.py - 43 - Number of training samples: 5011
+2024-05-27 08:46:53 - INFO - train.py - 44 - Number of validation samples: 4952
+
+2024-05-27 08:47:00 - INFO - train.py - 62 - 
+EPOCH 1 of 30
+2024-05-27 08:47:40 - INFO - predict.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 08:48:11 - INFO - predict.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 08:48:34 - INFO - predict.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
+2024-05-27 08:53:22 - INFO - predict.py - 32 - Train config: DATA:
+  classes: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+  dir: dataset/VOC2007
+  height: 416
+  name: VOC
+  num_classes: 20
+  width: 416
+LOG_PATH: logs/train.log
+MODEL:
+  ANCHORS: [array([10., 13.]), array([16., 30.]), array([33., 23.]), array([30., 61.]), array([62., 45.]), array([ 59., 119.]), array([116.,  90.]), array([156., 198.]), array([373., 326.])]
+  ANCHORS_PER_SCLAE: 3
+  STRIDES: [8, 16, 32]
+  pretrained_path: trained_model/darknet53_backbone_weights.pth
+  saved_path: trained_model/
+RANDOM_SEED: 44
+TRAIN:
+  batch_size: 8
+  device: cuda:0
+  epochs: 30
+  lr: 0.01
+  num_workers: 3
+  optimizer: SGD
+  weight_decay: 0.0001
