@@ -18,6 +18,7 @@ FDU Neural Networks and Machine Learning
 
 
 ### 模型训练：
+环境配置：Ubuntu 18.04, Python3.8, Pytorch 1.10, CUDA 11.3
 
 在configs/ train_confs.yaml 和 fasterrcnn_confs.py文件中设置模型训练的超参数。在根目录下命令行运行以下代码执行训练：
 
