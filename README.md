@@ -1,5 +1,4 @@
-# MID-TERM-PJ
-FDU Neural Networks and Machine Learning
+### FDU Neural Networks and Machine Learning
 训练Faster R-CNN进行实体识别任务。
 
 ### 任务描述：
